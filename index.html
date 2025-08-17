@@ -4,6 +4,593 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      <!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bg-box {
+            position: relative;
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .bg-box::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            height: 100vh;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF9W9vwDNn5X7zAVeDHXgUKo0nBy0pqCaDcw&s') center/cover no-repeat;
+            opacity: 0.9;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-box">
+        <h1>Hello World</h1>
+    </div>
+</body>
+
+</html> -->
+
+<html>
+<!-- <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Background image with gradient overlay */
+    .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(rgba(66, 2, 2, 0.6), rgba(0, 0, 0, 0.4)),
+            url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNkAgg5E8TZuRMFVSnvbfF1jcRYacTxm1Mw&s') center/cover no-repeat;
+        z-index: -1;
+        transform: scale(1.05);
+        /* Slight zoom for style */
+    }
+
+</style> -->
+<!-- <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background image with overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url('your-image.jpg') center/cover no-repeat;
+  z-index: -1;
+}
+
+/* Typewriter animation */
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  animation: typing 3s steps(30, end), blink  step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor blink effect */
+@keyframes blink {
+  from, to { border-color: transparent }
+  90% { border-color: white }
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+</style> -->
+<!-- <div class="hero">
+    <div class="content">
+      <h1 class="typing">Welcome to My Website</h1>
+      <p>Creating beautiful designs with HTML & CSS</p>
+    </div>
+  </div> -->
+  <style>
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  animation-name: typing;
+  animation-duration: 100s;
+  background-color: red;
+  
+}
+
+@keyframes typing {
+  from { width: 0; } 
+  to { width: 100%; }
+}
+
+
+  </style>
+
+  <h1 class="typing">Welcome to My Website</h1>
+
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Different Typing Animation Styles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .animation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .animation-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .animation-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .typing-text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Style 1: Classic Typewriter */
+        .typing-1 {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid #3498db;
+            animation: typing-1 3s steps(30, end), blink-1 1s step-end infinite;
+        }
+
+        @keyframes typing-1 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-1 {
+            from, to { border-color: transparent; }
+            50% { border-color: #3498db; }
+        }
+
+        /* Style 2: Gradient Text Typewriter */
+        .typing-2 {
+            overflow: hidden;
+            white-space: nowrap;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: typing-2 4s steps(40, end), gradient-2 3s ease infinite;
+        }
+
+        @keyframes typing-2 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes gradient-2 {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* Style 3: Matrix Style */
+        .typing-3 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            border-right: 3px solid #00ff00;
+            animation: typing-3 3.5s steps(35, end), blink-3 0.8s step-end infinite;
+        }
+
+        @keyframes typing-3 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-3 {
+            from, to { border-color: transparent; }
+            50% { border-color: #00ff00; }
+        }
+
+        /* Style 4: Neon Glow */
+        .typing-4 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #ff0080;
+            text-shadow: 
+                0 0 5px #ff0080,
+                0 0 10px #ff0080,
+                0 0 15px #ff0080,
+                0 0 20px #ff0080;
+            border-right: 3px solid #ff0080;
+            animation: typing-4 4s steps(40, end), blink-4 1.2s step-end infinite;
+        }
+
+        @keyframes typing-4 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-4 {
+            from, to { border-color: transparent; }
+            50% { border-color: #ff0080; }
+        }
+
+        /* Style 5: Rainbow Typewriter */
+        .typing-5 {
+            overflow: hidden;
+            white-space: nowrap;
+            background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            background-size: 700% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-right: 3px solid #ff0000;
+            animation: typing-5 3s steps(30, end), rainbow-5 2s linear infinite, blink-5 0.8s step-end infinite;
+        }
+
+        @keyframes typing-5 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes rainbow-5 {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        @keyframes blink-5 {
+            from, to { border-color: transparent; }
+            50% { border-color: #ff0000; }
+        }
+
+        /* Style 6: Glitch Effect */
+        .typing-6 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #fff;
+            text-shadow: 
+                2px 0 #ff0000,
+                -2px 0 #00ff00;
+            border-right: 3px solid #fff;
+            animation: typing-6 3.5s steps(35, end), blink-6 1s step-end infinite, glitch-6 0.3s infinite;
+        }
+
+        @keyframes typing-6 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-6 {
+            from, to { border-color: transparent; }
+            50% { border-color: #fff; }
+        }
+
+        @keyframes glitch-6 {
+            0%, 100% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+        }
+
+        /* Style 7: Bounce Typewriter */
+        .typing-7 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #e74c3c;
+            border-right: 3px solid #e74c3c;
+            animation: typing-7 4s steps(40, end), blink-7 1s step-end infinite, bounce-7 2s ease-in-out infinite;
+        }
+
+        @keyframes typing-7 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-7 {
+            from, to { border-color: transparent; }
+            50% { border-color: #e74c3c; }
+        }
+
+        @keyframes bounce-7 {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Style 8: Fire Effect */
+        .typing-8 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #ff4500;
+            text-shadow: 
+                0 0 5px #ff4500,
+                0 0 10px #ff4500,
+                0 0 15px #ff4500;
+            border-right: 3px solid #ff4500;
+            animation: typing-8 3.2s steps(32, end), blink-8 0.9s step-end infinite, fire-8 1.5s ease-in-out infinite;
+        }
+
+        @keyframes typing-8 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-8 {
+            from, to { border-color: transparent; }
+            50% { border-color: #ff4500; }
+        }
+
+        @keyframes fire-8 {
+            0%, 100% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(30deg); }
+        }
+
+        /* Style 9: Electric Blue */
+        .typing-9 {
+            overflow: hidden;
+            white-space: nowrap;
+            color: #00bfff;
+            text-shadow: 
+                0 0 5px #00bfff,
+                0 0 10px #00bfff,
+                0 0 15px #00bfff,
+                0 0 20px #00bfff;
+            border-right: 3px solid #00bfff;
+            animation: typing-9 3.8s steps(38, end), blink-9 0.7s step-end infinite, electric-9 0.5s ease-in-out infinite;
+        }
+
+        @keyframes typing-9 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-9 {
+            from, to { border-color: transparent; }
+            50% { border-color: #00bfff; }
+        }
+
+        @keyframes electric-9 {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* Style 10: Golden Shimmer */
+        .typing-10 {
+            overflow: hidden;
+            white-space: nowrap;
+            background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-right: 3px solid #ffd700;
+            animation: typing-10 4.2s steps(42, end), blink-10 1.1s step-end infinite, shimmer-10 2s ease-in-out infinite;
+        }
+
+        @keyframes typing-10 {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-10 {
+            from, to { border-color: transparent; }
+            50% { border-color: #ffd700; }
+        }
+
+        @keyframes shimmer-10 {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            .animation-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .typing-text {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>10 Different Typing Animation Styles</h1>
+            <p>Explore various creative typing effects with CSS animations</p>
+        </div>
+
+        <div class="animation-grid">
+            <!-- Style 1: Classic Typewriter -->
+            <div class="animation-card">
+                <div class="animation-title">1. Classic Typewriter</div>
+                <div class="typing-text typing-1">Hello, this is a classic typewriter effect!</div>
+                <div class="description">Traditional typewriter animation with a blinking cursor. Clean and professional look.</div>
+            </div>
+
+            <!-- Style 2: Gradient Text Typewriter -->
+            <div class="animation-card">
+                <div class="animation-title">2. Gradient Text Typewriter</div>
+                <div class="typing-text typing-2">Beautiful gradient colors flowing through text!</div>
+                <div class="description">Combines typing animation with flowing gradient colors for a modern effect.</div>
+            </div>
+
+            <!-- Style 3: Matrix Style -->
+            <div class="animation-card">
+                <div class="animation-title">3. Matrix Style</div>
+                <div class="typing-text typing-3">Welcome to the digital matrix world!</div>
+                <div class="description">Green text with glow effect inspired by the Matrix movie aesthetic.</div>
+            </div>
+
+            <!-- Style 4: Neon Glow -->
+            <div class="animation-card">
+                <div class="animation-title">4. Neon Glow</div>
+                <div class="typing-text typing-4">Neon lights in the digital night!</div>
+                <div class="description">Pink neon glow effect with multiple shadow layers for depth.</div>
+            </div>
+
+            <!-- Style 5: Rainbow Typewriter -->
+            <div class="animation-card">
+                <div class="animation-title">5. Rainbow Typewriter</div>
+                <div class="typing-text typing-5">Colors of the rainbow flowing by!</div>
+                <div class="description">Full spectrum rainbow colors cycling through the text continuously.</div>
+            </div>
+
+            <!-- Style 6: Glitch Effect -->
+            <div class="animation-card">
+                <div class="animation-title">6. Glitch Effect</div>
+                <div class="typing-text typing-6">Digital glitch in the system detected!</div>
+                <div class="description">Cyberpunk-style glitch effect with RGB color separation and movement.</div>
+            </div>
+
+            <!-- Style 7: Bounce Typewriter -->
+            <div class="animation-card">
+                <div class="animation-title">7. Bounce Typewriter</div>
+                <div class="typing-text typing-7">Bouncing letters with energy!</div>
+                <div class="description">Playful bouncing animation combined with typing effect for dynamic movement.</div>
+            </div>
+
+            <!-- Style 8: Fire Effect -->
+            <div class="animation-card">
+                <div class="animation-title">8. Fire Effect</div>
+                <div class="typing-text typing-8">Burning hot text effect!</div>
+                <div class="description">Orange fire glow with hue rotation for a burning flame appearance.</div>
+            </div>
+
+            <!-- Style 9: Electric Blue -->
+            <div class="animation-card">
+                <div class="animation-title">9. Electric Blue</div>
+                <div class="typing-text typing-9">Electric energy flowing through!</div>
+                <div class="description">Bright electric blue with pulsing opacity for an energetic feel.</div>
+            </div>
+
+            <!-- Style 10: Golden Shimmer -->
+            <div class="animation-card">
+                <div class="animation-title">10. Golden Shimmer</div>
+                <div class="typing-text typing-10">Golden shimmer effect!</div>
+                <div class="description">Luxurious golden gradient with shimmer animation for premium feel.</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✨ Each animation demonstrates different CSS techniques and effects ✨</p>
+        </div>
+    </div>
+</body>
+</html>
+    </style>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -76,3 +663,4 @@
     </div>
   </body>
 </html>
+
